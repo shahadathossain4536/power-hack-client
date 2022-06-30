@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ children }) => {
   return (
@@ -24,7 +25,9 @@ const Navbar = ({ children }) => {
               </svg>
             </label>
           </div>
-          <div class="flex-1 px-2 mx-2">Power Hack</div>
+          <div class="flex-1 px-2 mx-2">
+            <Link to="/">Power Hack</Link>
+          </div>
           <div class="flex-none hidden lg:block">
             <ul class="menu menu-horizontal">
               {/* <!-- Navbar menu content here --> */}

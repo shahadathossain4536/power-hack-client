@@ -1,122 +1,122 @@
 [
     {
     "billerId": 1,
-    "name":"Shahadat1",
-    "email":"shahadathossain4536@gmail1.com",
-    "phone":"01954704007",
-    "paidAmount":"4001"
+    "billerName":"Shahadat1",
+    "billerEmail":"shahadathossain4536@gmail1.com",
+    "billerPhone":"01954704007",
+   "amount":"4001"
     
     },
     {
     "billerId": 2,
-    "name":"Shahadat2",
-    "email":"shahadathossain4536@gmail2.com",
-    "phone":"01954704007",
-    "paidAmount":"4002"
+    "billerName":"Shahadat2",
+    "billerEmail":"shahadathossain4536@gmail2.com",
+    "billerPhone":"01954704007",
+   "amount":"4002"
     
     },
     {
     "billerId": 3,
-    "name":"Shahadat3",
-    "email":"shahadathossain4536@gmail3.com",
-    "phone":"01954704007",
-    "paidAmount":"4003"
+    "billerName":"Shahadat3",
+    "billerEmail":"shahadathossain4536@gmail3.com",
+    "billerPhone":"01954704007",
+   "amount":"4003"
     
     },
     {
     "billerId": 4,
-    "name":"Shahadat4",
-    "email":"shahadathossain4536@gmail4.com",
-    "phone":"01954704007",
-    "paidAmount":"4004"
+    "billerName":"Shahadat4",
+    "billerEmail":"shahadathossain4536@gmail4.com",
+    "billerPhone":"01954704007",
+   "amount":"4004"
     
     },
     {
     "billerId": 5,
-    "name":"Shahadat5",
-    "email":"shahadathossain4536@gmail5.com",
-    "phone":"01954704007",
-    "paidAmount":"4005"
+    "billerName":"Shahadat5",
+    "billerEmail":"shahadathossain4536@gmail5.com",
+    "billerPhone":"01954704007",
+   "amount":"4005"
     
     },
     {
     "billerId": 6,
-    "name":"Shahadat6",
-    "email":"shahadathossain4536@gmail6.com",
-    "phone":"01954704007",
-    "paidAmount":"4006"
+    "billerName":"Shahadat6",
+    "billerEmail":"shahadathossain4536@gmail6.com",
+    "billerPhone":"01954704007",
+   "amount":"4006"
     
     },
     {
     "billerId": 7,
-    "name":"Shahadat7",
-    "email":"shahadathossain4536@gmail7.com",
-    "phone":"01954704007",
-    "paidAmount":"4007"
+    "billerName":"Shahadat7",
+    "billerEmail":"shahadathossain4536@gmail7.com",
+    "billerPhone":"01954704007",
+   "amount":"4007"
     
     },
     {
     "billerId": 8,
-    "name":"Shahadat8",
-    "email":"shahadathossain4536@gmail8.com",
-    "phone":"01954704007",
-    "paidAmount":"4008"
+    "billerName":"Shahadat8",
+    "billerEmail":"shahadathossain4536@gmail8.com",
+    "billerPhone":"01954704007",
+   "amount":"4008"
     
     },
     {
     "billerId": 9,
-    "name":"Shahadat9",
-    "email":"shahadathossain4536@gmail9.com",
-    "phone":"01954704007",
-    "paidAmount":"4009"
+    "billerName":"Shahadat9",
+    "billerEmail":"shahadathossain4536@gmail9.com",
+    "billerPhone":"01954704007",
+   "amount":"4009"
     
     },
     {
     "billerId": 10,
-    "name":"Shahadat",
-    "email":"shahadathossain4536@gmail10.com",
-    "phone":"01954704007",
-    "paidAmount":"40010"
+    "billerName":"Shahadat",
+    "billerEmail":"shahadathossain4536@gmail10.com",
+    "billerPhone":"01954704007",
+   "amount":"40010"
     
     },
     {
     "billerId": 11,
-    "name":"Shahadat11",
-    "email":"shahadathossain4536@gmail11.com",
-    "phone":"01954704007",
-    "paidAmount":"40011"
+    "billerName":"Shahadat11",
+    "billerEmail":"shahadathossain4536@gmail11.com",
+    "billerPhone":"01954704007",
+   "amount":"40011"
     
     },
     {
     "billerId": 12,
-    "name":"Shahadat12",
-    "email":"shahadathossain4536@gmail12.com",
-    "phone":"01954704007",
-    "paidAmount":"40012"
+    "billerName":"Shahadat12",
+    "billerEmail":"shahadathossain4536@gmail12.com",
+    "billerPhone":"01954704007",
+   "amount":"40012"
     
     },
     {
     "billerId": 13,
-    "name":"Shahadat13",
-    "email":"shahadathossain4536@gmail13.com",
-    "phone":"01954704007",
-    "paidAmount":"40013"
+    "billerName":"Shahadat13",
+    "billerEmail":"shahadathossain4536@gmail13.com",
+    "billerPhone":"01954704007",
+   "amount":"40013"
     
     },
     {
     "billerId": 14,
-    "name":"Shahadat14",
-    "email":"shahadathossain4536@gmail14.com",
-    "phone":"01954704007",
-    "paidAmount":"40014"
+    "billerName":"Shahadat14",
+    "billerEmail":"shahadathossain4536@gmail14.com",
+    "billerPhone":"01954704007",
+   "amount":"40014"
     
     },
     {
     "billerId": 15,
-    "name":"Shahadat14",
-    "email":"shahadathossain4536@gmail14.com",
-    "phone":"01954704007",
-    "paidAmount":"40014"
+    "billerName":"Shahadat14",
+    "billerEmail":"shahadathossain4536@gmail14.com",
+    "billerPhone":"01954704007",
+   "amount":"40014"
     
     }
 

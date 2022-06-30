@@ -1,24 +1,43 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import search from "../../assets/magnifying-glass-solid.svg";
+import { useQuery } from "react-query";
 
 const BillingHeader = () => {
+  const { refetch } = useQuery();
   const {
     register,
     formState: { errors },
     handleSubmit,
+    reset,
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    console.log(data);
+
+    fetch("http://localhost:5000/add-billing", {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        refetch();
+        console.log(data);
+      });
+
+    // reset();
+  };
   return (
     <section className="grid grid-cols-2 bg-base-300 my-10 py-3 px-3">
       <div className="flex justify-evenly">
         <h2>Billing</h2>
-        <div>
-          <input
-            type="text"
-            placeholder="Type here"
-            class="input input-bordered input-sm w-full max-w-xs"
-          />
-        </div>
+        <input
+          type="text"
+          placeholder="Search"
+          class="input input-sm input-bordered"
+        />
       </div>
       <div className="flex justify-end">
         <label for="add-bill-modal" class="btn btn-sm">
@@ -36,15 +55,34 @@ const BillingHeader = () => {
 
             {/* react hook from */}
             <form onSubmit={handleSubmit(onSubmit)}>
+              {/* Biller ID Start */}
+              <div class="form-control w-full">
+                <label class="label">
+                  <span class="label-text">Biller ID</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="Biller ID"
+                  class="input input-bordered w-full font-bold"
+                  {...register("billerId", { required: true })}
+                />
+                <label class="label">
+                  <span class="label-text-alt text-red-500">
+                    {errors.billerId?.type === "required" &&
+                      "Biller Id is required"}
+                  </span>
+                </label>
+              </div>
+              {/* Biller ID End */}
               {/* Biller Name Start */}
-              <div class="form-control w-full max-w-xs">
+              <div class="form-control w-full">
                 <label class="label">
                   <span class="label-text">Biller Name</span>
                 </label>
                 <input
                   type="text"
                   placeholder="Biller Name"
-                  class="input input-bordered w-full max-full"
+                  class="input input-bordered w-full font-bold"
                   {...register("billerName", { required: true })}
                 />
                 <label class="label">
@@ -56,14 +94,14 @@ const BillingHeader = () => {
               </div>
               {/* Biller Name End */}
               {/* Biller Email Start */}
-              <div class="form-control w-full max-w-xs">
+              <div class="form-control w-full ">
                 <label class="label">
                   <span class="label-text">Biller Email</span>
                 </label>
                 <input
                   type="text"
                   placeholder="Biller Email"
-                  class="input input-bordered w-full max-full"
+                  class="input input-bordered w-full max-full font-bold"
                   {...register("billerEmail", { required: true })}
                 />
                 <label class="label">
@@ -75,14 +113,14 @@ const BillingHeader = () => {
               </div>
               {/* Biller Email End */}
               {/* Biller Phone Start */}
-              <div class="form-control w-full max-w-xs">
+              <div class="form-control w-full">
                 <label class="label">
                   <span class="label-text">Biller Phone Number</span>
                 </label>
                 <input
                   type="text"
                   placeholder="Biller Phone Number"
-                  class="input input-bordered w-full max-full"
+                  class="input input-bordered w-full max-full font-bold"
                   {...register("billerPhone", {
                     required: {
                       value: true,
@@ -109,14 +147,14 @@ const BillingHeader = () => {
               </div>
               {/* Biller Phone End */}
               {/* Biller PAID AMOUNT Start */}
-              <div class="form-control w-full max-w-xs">
+              <div class="form-control w-full">
                 <label class="label">
                   <span class="label-text">Bill Amount</span>
                 </label>
                 <input
                   type="text"
                   placeholder="Bill Amount"
-                  class="input input-bordered w-full max-full"
+                  class="input input-bordered w-full max-full font-bold"
                   {...register("amount", { required: true })}
                 />
                 <label class="label">
@@ -139,11 +177,12 @@ const BillingHeader = () => {
                 {...register("mail", { required: "Email Address is required" })}
               />
               <p>{errors.mail?.message}</p> */}
-              <input class="btn w-full" type="submit" value="Submit"></input>
+
+              <input class="btn w-full " type="submit" value="Submit"></input>
             </form>
             {/* react hook from */}
 
-            <div class="modal-action">
+            <div>
               <label for="add-bill-modal" class="btn">
                 Yay!
               </label>

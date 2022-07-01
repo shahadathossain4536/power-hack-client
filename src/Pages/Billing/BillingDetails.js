@@ -36,7 +36,10 @@ const BillingDetails = () => {
             </tr>
           </thead>
           {BillerDetails.map((BillerDetail) => (
-            <BillingDetail BillerDetail={BillerDetail}></BillingDetail>
+            <BillingDetail
+              BillerDetail={BillerDetail}
+              setBillerDetails={setBillerDetails}
+            ></BillingDetail>
           ))}
         </table>
       </div>

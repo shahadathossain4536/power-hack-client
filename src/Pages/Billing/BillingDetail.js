@@ -14,7 +14,7 @@ const BillingDetail = ({ BillerDetail, BillerDetails, setBillerDetails }) => {
     const proceed = window.confirm("Are you sure you went to delete");
     if (proceed) {
       console.log(id);
-      const url = `http://localhost:5000/delete-billing/${id}`;
+      const url = `https://protected-reef-52869.herokuapp.com/delete-billing/${id}`;
       fetch(url, {
         method: "DELETE",
 

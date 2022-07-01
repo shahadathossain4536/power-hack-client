@@ -4,23 +4,23 @@ import { useQuery } from "react-query";
 
 const BillingDetails = () => {
   const [BillerDetails, setBillerDetails] = useState([]);
-  //   useEffect(() => {
-  //     fetch("http://localhost:5000/billing-list")
-  //       .then((res) => res.json())
-  //       .then((data) => setBillerDetails(data));
-  //   }, []);
-
-  const { data, isLoading, refetch } = useQuery("data", () =>
-    fetch("http://localhost:5000/billing-list", {
-      method: "GET",
-    })
+  useEffect(() => {
+    fetch("https://protected-reef-52869.herokuapp.com/billing-list")
       .then((res) => res.json())
-      .then((data) => {
-        setBillerDetails(data);
-        refetch();
-      })
-  );
-  console.log(BillerDetails);
+      .then((data) => setBillerDetails(data));
+  }, []);
+
+  // const { data, isLoading, refetch } = useQuery("data", () =>
+  //   fetch("https://protected-reef-52869.herokuapp.com/billing-list", {
+  //     method: "GET",
+  //   })
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setBillerDetails(data);
+  //       refetch();
+  //     })
+  // );
+  var a = console.log([...BillerDetails].reverse());
   return (
     <div>
       <div class="overflow-x-auto">
@@ -35,7 +35,7 @@ const BillingDetails = () => {
               <th>Action</th>
             </tr>
           </thead>
-          {BillerDetails.map((BillerDetail) => (
+          {[...BillerDetails].reverse().map((BillerDetail) => (
             <BillingDetail
               BillerDetail={BillerDetail}
               setBillerDetails={setBillerDetails}

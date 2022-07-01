@@ -14,7 +14,7 @@ const BillingHeader = () => {
   const onSubmit = (data) => {
     console.log(data);
 
-    fetch("http://localhost:5000/add-billing", {
+    fetch("https://protected-reef-52869.herokuapp.com/add-billing", {
       method: "POST",
       body: JSON.stringify(data),
       headers: {
@@ -23,7 +23,7 @@ const BillingHeader = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        refetch();
+        refetch(true);
         console.log(data);
       });
 

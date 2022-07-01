@@ -10,7 +10,7 @@ const UpdateBillingData = () => {
   const navigate = useNavigate();
   const [billData, setBillData] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/billing-list/${id}`)
+    fetch(`https://protected-reef-52869.herokuapp.com/billing-list/${id}`)
       .then((res) => res.json())
       .then((data) => setBillData(data));
   }, []);
@@ -23,7 +23,7 @@ const UpdateBillingData = () => {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    const uri = `http://localhost:5000/update-billing/${id}`;
+    const uri = `https://protected-reef-52869.herokuapp.com/update-billing/${id}`;
     console.log(uri);
     fetch(uri, {
       method: "PUT",

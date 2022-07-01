@@ -25,7 +25,7 @@ const BillingDetail = ({ BillerDetail, BillerDetails, setBillerDetails }) => {
         .then((res) => res.json())
         .then((data) => {
           if (data.deletedCount > 0) {
-            const remaining = BillerDetails.filter(
+            const remaining = BillerDetails?.filter(
               (BillerDetailDelete) => BillerDetailDelete._id !== id
             );
             setBillerDetails(remaining);

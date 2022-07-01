@@ -6,7 +6,6 @@ import Pagination from "./Pagination";
 const Billing = () => {
   return (
     <div>
-      <BillingHeader></BillingHeader>
       <BillingDetails></BillingDetails>
       <Pagination></Pagination>
     </div>
